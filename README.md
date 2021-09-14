@@ -1,8 +1,11 @@
-This is the code base for the React app for my [Full Stack React & Firebase series](https://www.youtube.com/watch?v=RkBfu-W7tt0&list=PLMhAeHCz8S38ryyeMiBPPUnFAiWnoPvWP)
+This code base is forked from the [Full Stack React & Firebase series](https://www.youtube.com/watch?v=RkBfu-W7tt0&list=PLMhAeHCz8S38ryyeMiBPPUnFAiWnoPvWP)
 
+I have added a page for Google maps and images in posts to make it closer to Twitter standard where useres can add images to their tweets.
+
+For this repo to work you also need to install and run the socialburger-functions repo.
 ## 1: API Base URL
 
-Add https://europe-west1-socialape-d081e.cloudfunctions.net/api as the 'proxy' value in package.json
+Add the url to your firebase API as the 'proxy' value in package.json
 
 ## 2: Install packages
 
