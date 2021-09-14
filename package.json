@@ -1,17 +1,20 @@
 {
-  "name": "socialape-client",
+  "name": "socialburger-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
-    "axios": "^0.18.0",
+    "@material-ui/lab": "^3.0.0-alpha.30",
+    "@react-google-maps/api": "^2.2.0",
+    "axios": "^0.21.3",
     "dayjs": "^1.8.11",
     "jwt-decode": "^2.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-google-maps": "^9.4.5",
     "react-redux": "^6.0.1",
-    "react-router-dom": "^5.0.0",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
@@ -31,5 +34,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "https://europe-west1-socialape-d081e.cloudfunctions.net/api"
+  "proxy": "https://europe-west1-socialburger-57212.cloudfunctions.net/api"
 }
