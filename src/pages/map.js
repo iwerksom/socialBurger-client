@@ -30,7 +30,7 @@ class SocialMapComponent extends Component {
   }
   render() {
     return (
-      <LoadScript googleMapsApiKey="AIzaSyAJWFnXShcKFLKUOQXHWPUdAsE6jOyhyUI">
+      <LoadScript googleMapsApiKey="YOUR_KEY_HERE">
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
           {MOCK_MAP_DATA.map((mapData) => (
             <Marker
