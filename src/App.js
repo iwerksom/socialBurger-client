@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import jwtDecode from 'jwt-decode';
 // Redux
 import { Provider } from 'react-redux';
@@ -18,13 +18,13 @@ import home from './pages/home';
 import login from './pages/login';
 import signup from './pages/signup';
 import user from './pages/user';
-
+import map from './pages/map';
 import axios from 'axios';
 
 const theme = createMuiTheme(themeObject);
 
 axios.defaults.baseURL =
-  'https://europe-west1-socialape-d081e.cloudfunctions.net/api';
+  'https://europe-west1-socialburger-57212.cloudfunctions.net/api';
 
 const token = localStorage.FBIdToken;
 if (token) {
@@ -52,6 +52,7 @@ class App extends Component {
                 <AuthRoute exact path="/login" component={login} />
                 <AuthRoute exact path="/signup" component={signup} />
                 <Route exact path="/users/:handle" component={user} />
+                <Route exact path="/map" component={map} />
                 <Route
                   exact
                   path="/users/:handle/scream/:screamId"
