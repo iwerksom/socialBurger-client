@@ -8,11 +8,14 @@ import MyButton from '../../util/MyButton';
 import DeleteScream from './DeleteScream';
 import ScreamDialog from './ScreamDialog';
 import LikeButton from './LikeButton';
+import Rating from '../../util/Rating'
 // MUI Stuff
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+
+
 // Icons
 import ChatIcon from '@material-ui/icons/Chat';
 // Redux
@@ -45,7 +48,8 @@ class Scream extends Component {
         userHandle,
         screamId,
         likeCount,
-        commentCount
+        commentCount,
+        rating
       },
       user: {
         authenticated,
@@ -78,6 +82,7 @@ class Scream extends Component {
             {dayjs(createdAt).fromNow()}
           </Typography>
           <Typography variant="body1">{body}</Typography>
+          <Typography>{Rating(rating)}</Typography>
           <LikeButton screamId={screamId} />
           <span>{likeCount} Likes</span>
           <MyButton tip="comments">
